@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Countdown Timer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <script src="app.js"></script>
+</head>
+
+<body class="bg-gray-900 text-white text-center p-4">
+
+    <h1 class="text-3xl md:text-5xl font-bold mt-6 mb-8">Countdown Timer</h1>
+
+    <!-- Date & Time Inputs -->
+    <div class="flex flex-col md:flex-row justify-center items-center gap-4 mb-6">
+        <div>
+            <label class="block mb-2 text-lg font-medium">Enter Date</label>
+            <input type="date" id="date" class="bg-white text-black border-2 border-amber-400 p-2 rounded">
+        </div>
+        <div>
+            <label class="block mb-2 text-lg font-medium">Enter Time</label>
+            <input type="time" id="time" class="bg-white text-black border-2 border-amber-400 p-2 rounded">
+        </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="flex flex-wrap justify-center gap-4 mb-8">
+        <button id="calculate"
+            class="bg-amber-100 text-black px-6 py-2 rounded font-semibold hover:bg-amber-200">Calculate</button>
+        <button id="stop"
+            class="bg-amber-100 text-black px-6 py-2 rounded font-semibold hover:bg-amber-200">Stop</button>
+        <button id="reset"
+            class="bg-amber-100 text-black px-6 py-2 rounded font-semibold hover:bg-amber-200">Reset</button>
+    </div>
+
+    <!-- Countdown Display -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 justify-center items-center">
+        <div>
+            <p class="text-lg uppercase font-serif mb-2">Day</p>
+            <div class="bg-black text-5xl md:text-6xl p-6 rounded-2xl">0</div>
+        </div>
+        <div>
+            <p class="text-lg uppercase font-serif mb-2">Hours</p>
+            <div class="bg-black text-5xl md:text-6xl p-6 rounded-2xl">0</div>
+        </div>
+        <div>
+            <p class="text-lg uppercase font-serif mb-2">Minutes</p>
+            <div class="bg-black text-5xl md:text-6xl p-6 rounded-2xl">0</div>
+        </div>
+        <div>
+            <p class="text-lg uppercase font-serif mb-2">Seconds</p>
+            <div class="bg-black text-5xl md:text-6xl p-6 rounded-2xl">0</div>
+        </div>
+    </div>
