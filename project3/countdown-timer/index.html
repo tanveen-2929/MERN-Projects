@@ -25,7 +25,7 @@
     </div>
 
     <!-- Buttons -->
-    <div class="flex flex-wrap justify-center gap-4 mb-8">
+    <div class="flex flex-wrap justify-center gap-4 mb-8 [&>*]:cursor-pointer">
         <button id="calculate"
             class="bg-amber-100 text-black px-6 py-2 rounded font-semibold hover:bg-amber-200">Calculate</button>
         <button id="stop"
@@ -38,18 +38,18 @@
     <div class="grid grid-cols-2 md:grid-cols-4 gap-6 justify-center items-center">
         <div>
             <p class="text-lg uppercase font-serif mb-2">Day</p>
-            <div class="bg-black text-5xl md:text-6xl p-6 rounded-2xl">0</div>
+            <div id="days" class="bg-black text-5xl md:text-6xl p-6 rounded-2xl">0</div>
         </div>
         <div>
             <p class="text-lg uppercase font-serif mb-2">Hours</p>
-            <div class="bg-black text-5xl md:text-6xl p-6 rounded-2xl">0</div>
+            <div id="hours" class="bg-black text-5xl md:text-6xl p-6 rounded-2xl">0</div>
         </div>
         <div>
             <p class="text-lg uppercase font-serif mb-2">Minutes</p>
-            <div class="bg-black text-5xl md:text-6xl p-6 rounded-2xl">0</div>
+            <div id="minutes" class="bg-black text-5xl md:text-6xl p-6 rounded-2xl">0</div>
         </div>
         <div>
             <p class="text-lg uppercase font-serif mb-2">Seconds</p>
-            <div class="bg-black text-5xl md:text-6xl p-6 rounded-2xl">0</div>
+            <div id="seconds" class="bg-black text-5xl md:text-6xl p-6 rounded-2xl">0</div>
         </div>
     </div>
